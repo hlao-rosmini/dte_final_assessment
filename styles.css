@@ -1,9 +1,17 @@
+
+.flex-containertext-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 50%;
+  
+}
 .flex-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 15%;
-  margin-right: 5%;
+  margin-right: 15%;
 }
 body {
     font-size: 28px;
@@ -11,7 +19,6 @@ body {
 img {
   margin-left: auto;
   margin-right: auto;
-
 }
   ul {
     list-style-type: none;
@@ -52,7 +59,7 @@ img {
   }
 
   * {box-sizing: border-box}
-  body {font-family: Verdana, sans-serif; margin:0}
+
   .mySlides {display: none}
   img {vertical-align: middle;}
   
@@ -60,7 +67,7 @@ img {
   .slideshow-container {
     max-width: 1000px;
     position: relative;
-    margin-left: auto;
+ 
   }
   
   /* Next & previous buttons */
@@ -127,12 +134,7 @@ img {
     animation-name: fade;
     animation-duration: 1.5s;
   }
-  
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
+
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
