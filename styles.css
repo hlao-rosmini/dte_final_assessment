@@ -16,7 +16,12 @@ img {
 footer {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   justify-content: space-around;
+=======
+  justify-content: space-between;
+  padding: 3px;
+>>>>>>> a943fa00b68a14e98e78106992bb3d7f516ee29e
   background-color: rgb(0, 64, 162);
 }
   ul {
