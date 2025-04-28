@@ -144,12 +144,43 @@ footer {
     .prev, .next,.text {font-size: 11px}
   }
 
-.bodyParagraph{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-}
+  .intro-text {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .boxes-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .info-box {
+    flex: 1 1 30%;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: white;
+    border: 2px solid rgb(0, 64, 162);
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+  }
+  
+  .info-box:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.03);
+  }
 .footertext {
   color: #ffffff;
   text-align: left;
