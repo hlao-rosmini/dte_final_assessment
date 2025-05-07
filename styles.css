@@ -210,14 +210,31 @@ footer {
     background-color: #f0f0f0;
     transform: scale(1.03);
   }
+  .footertextinfo {
+    text-align: left;
+    font-size: 12pt;
+    font-weight: 500;
+    margin: 0;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;}
 .footertext {
   text-align: left;
   font-size: 12pt;
   font-weight: 500;
   margin: 0;
   justify-content: center;
+  color: #fff;
+  text-decoration: none;
 }
-
+.footertext:hover {
+  text-align: left;
+  font-size: 12pt;
+  font-weight: 500;
+  margin: 0;
+  justify-content: center;
+  color: red;
+}
 .nav {
   display: flex;
   flex-direction: column;
