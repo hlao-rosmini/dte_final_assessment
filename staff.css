@@ -1,130 +1,127 @@
-
 .flex-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%;
-    padding: 20px 0; 
-  }
-  
-  
-  .logo {
-    max-width: 100px;
-    width: 10vw;
-    height: auto;
-  }
-  
-  .flex-container h2, .flex-container h3 {
-    margin: 0;
-    padding: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-    text-align: center;
-    color: rgb(0, 84, 162);
-  }
-  
-  .flex-container h2 {
-    font-size: 32px;
-    margin-right: 10px;
-  }
-  
-  .flex-container h3 {
-    font-size: 24px;
-    margin-left: 10px;
-  }
-  
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
+  padding: 20px 0; 
+}
+
+
+.logo {
+  max-width: 100px;
+  width: 10vw;
+  height: auto;
+}
+
+.flex-container h2, .flex-container h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  color: rgb(0, 84, 162);
+}
+
+.flex-container h2 {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.flex-container h3 {
+  font-size: 24px;
+  margin-left: 10px;
+}
 .navbar {
-    background-color: rgb(0, 84, 162);
-    text-align: center;
+  background-color: rgb(0, 84, 162);
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping on small screens */
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-links li a:hover {
+  background-color: #111;
+}
+
+.nav-links .active {
+  background-color: red;
+}
+
+/* Optional: Smaller padding on mobile */
+@media (max-width: 600px) {
+  .nav-links li a {
+    padding: 10px 12px;
   }
-  
-  .nav-links {
+}
+body {
+    font-size: 25px;
+    font-family: "Segoe UI", Arial, sans-serif; 
+  }
+
+img {
+  width: 7%;
+  height: auto;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(0, 84, 162);
+  color: white;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+  ul {
     display: flex;
-    flex-wrap: wrap; /* allows wrapping on small screens */
+    align-items: center;
     justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 84, 162);
+    top: 0;
   }
   
-  .nav-links li {
-    margin: 0;
+  li {
+    float: left;
   }
   
-  .nav-links li a {
+  li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
   }
   
-  .nav-links li a:hover {
+  li a:hover {
     background-color: #111;
   }
   
-  .nav-links .active {
+  .active {
     background-color: red;
   }
-  
-  /* Optional: Smaller padding on mobile */
-  @media (max-width: 600px) {
-    .nav-links li a {
-      padding: 10px 12px;
-    }
-  }
-  body {
-      font-size: 25px;
-      font-family: "Segoe UI", Arial, sans-serif; 
-    }
-  
-  img {
-    width: 7%;
-    height: auto;
-  }
-  
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgb(0, 84, 162);
-    color: white;
-    flex-wrap: wrap;
-    text-align: center;
-  }
-  
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: rgb(0, 84, 162);
-      top: 0;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a {
-      display: block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      
-    }
-    
-    li a:hover {
-      background-color: #111;
-    }
-    
-    .active {
-      background-color: red;
-    }
-
   /* Styling for Staff Title */
   .titlestaff {
     text-align: center;
@@ -234,3 +231,5 @@
         width: 90%; /* Stacks the staff members in one column for very small screens */
     }
 }
+
+
