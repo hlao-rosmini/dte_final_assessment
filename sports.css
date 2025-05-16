@@ -1,3 +1,6 @@
+/* Existing CSS */
+
+/* Keep the navbar and footer untouched */
 .flex-container {
   display: flex;
   justify-content: center; 
@@ -194,7 +197,6 @@ footer {
     margin-left: 10px; /* Add a little space between the two text boxes */
   }
   
-  
   .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns for the images */
@@ -245,7 +247,7 @@ footer {
   padding: 20px;
   box-sizing: border-box;
   transition: all 0.3s ease;
-  height: 530px;
+  height: 100%;
 }
 .text-item:hover {
   background-color: #f0f0f0;
@@ -255,4 +257,65 @@ footer {
   margin-top: 10px;
   font-size: 16px;
   color: #333;
+}
+
+
+@media (max-width: 1024px) {
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+
+  .image-grid {
+    width: 80%; 
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .text-container {
+    flex-direction: column; 
+  }
+
+  .text-left, .text-right {
+    flex: 1 1 100%; 
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .image-item {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Mobile devices */
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 30vw;
+  }
+
+  .navbar {
+    padding: 10px 0; 
+  }
+
+  .nav-links li a {
+    padding: 10px 12px; 
+  }
+
+  .image-grid {
+    width: 100%; 
+    grid-template-columns: 1fr; 
+  }
+
+  .text-container {
+    width: 100%; 
+    padding: 10px;
+  }
 }
