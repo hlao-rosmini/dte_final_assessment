@@ -1,3 +1,4 @@
+/*Top of page title and logo*/
 .flex-container {
   display: flex;
   justify-content: center; 
@@ -6,13 +7,13 @@
   padding: 20px 0; 
 }
 
-
+/*logo*/
 .logo {
   max-width: 100px;
   width: 10vw;
   height: auto;
 }
-
+/*Title text*/
 .flex-container h2, .flex-container h3 {
   margin: 0;
   padding: 0;
@@ -30,6 +31,7 @@
   font-size: 24px;
   margin-left: 10px;
 }
+/*Navbar*/
 .navbar {
   background-color: rgb(0, 84, 162);
   text-align: center;
@@ -37,7 +39,7 @@
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -64,22 +66,23 @@
   background-color: red;
 }
 
-/* Optional: Smaller padding on mobile */
+/* Responsiveness on Mobile phones */
 @media (max-width: 600px) {
   .nav-links li a {
     padding: 10px 12px;
   }
 }
+/*Body font*/
 body {
     font-size: 25px;
     font-family: "Segoe UI", Arial, sans-serif; 
   }
-
+/*Photo sizes*/
 img {
   width: 7%;
   height: auto;
 }
-
+/*footer*/
 footer {
   display: flex;
   align-items: center;
@@ -113,11 +116,14 @@ footer {
     text-decoration: none;
   }
   
-  
+  /* Hovering and active */
   li a:hover {
     background-color: #111;
   }
-  
+
+  .active {
+    background-color: red;
+  }
 
   .center {
     display: flex;
@@ -126,7 +132,7 @@ footer {
     width: 10%;
     height: 10%;
   }
-
+/* Carousel */
   * {box-sizing: border-box}
 
   .mySlides {display: none}
@@ -178,17 +184,7 @@ footer {
     border: 5px solid #111;
   }
 
-  /* Caption text */
-  .text {
-    color: #000000;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-  
+
   /* Number text */
   .numbertext {
     color: #f2f2f2;
@@ -216,11 +212,12 @@ footer {
     animation-duration: 1.5s;
   }
 
-  /* On smaller screens, decrease text size */
+  /* Resizing text size on smaller screens */
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
 
+  /* Text below carousel */
   .intro-text {
     max-width: 800px;
     margin: 0 auto 40px;
@@ -231,7 +228,7 @@ footer {
     border: 2px solid rgb(0, 84, 162);
     border-radius: 10px;
   }
-  
+  /* Boxes around text */
   .boxes-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -255,6 +252,7 @@ footer {
     background-color: #f0f0f0;
     transform: scale(1.03);
   }
+  /* More footer text */
   .footertextinfo {
     text-align: left;
     font-size: 12pt;
@@ -280,6 +278,8 @@ footer {
   justify-content: center;
   color: red;
 }
+
+/*More for navbar*/
 .nav {
   display: flex;
   flex-direction: column;

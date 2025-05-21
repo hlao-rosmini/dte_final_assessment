@@ -1,3 +1,4 @@
+/*Top of page title and logo*/
 .flex-container {
   display: flex;
   justify-content: center; 
@@ -6,13 +7,13 @@
   padding: 20px 0; 
 }
 
-
+/*logo*/
 .logo {
   max-width: 100px;
   width: 10vw;
   height: auto;
 }
-
+/*Title text*/
 .flex-container h2, .flex-container h3 {
   margin: 0;
   padding: 0;
@@ -30,6 +31,7 @@
   font-size: 24px;
   margin-left: 10px;
 }
+/*Navbar*/
 .navbar {
   background-color: rgb(0, 84, 162);
   text-align: center;
@@ -37,7 +39,7 @@
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -64,22 +66,23 @@
   background-color: red;
 }
 
-/* Optional: Smaller padding on mobile */
+/* Responsiveness on Mobile phones */
 @media (max-width: 600px) {
   .nav-links li a {
     padding: 10px 12px;
   }
 }
+/*Body font*/
 body {
     font-size: 25px;
     font-family: "Segoe UI", Arial, sans-serif; 
   }
-
+/*Photo sizes*/
 img {
   width: 7%;
   height: auto;
 }
-
+/*footer*/
 footer {
   display: flex;
   align-items: center;
@@ -105,24 +108,23 @@ footer {
   li {
     float: left;
   }
-  
   li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
   }
   
+  /* Hovering and active */
   li a:hover {
     background-color: #111;
   }
-  
+
   .active {
     background-color: red;
   }
-  /* Styling for Staff Title */
+  /* The title for the staff */
   .titlestaff {
     text-align: center;
     margin: 30px 0;
@@ -138,7 +140,7 @@ footer {
     padding-bottom: 10px;
   }
   
-  
+  /* Footer */
 .footertextinfo {
     text-align: left;
     font-size: 12pt;
@@ -165,7 +167,7 @@ footer {
     color: red;
 }
 
-  /* New Styles for Staff Section */
+  /* Staff page section */
 .staff-section {
     padding: 20px;
     text-align: center;
@@ -181,11 +183,11 @@ footer {
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
-    flex-wrap: wrap; /* Ensures responsiveness */
+    flex-wrap: wrap; 
 }
 
 .staff-member {
-    width: 22%; /* Adjusts width for a good layout */
+    width: 22%; 
     margin: 10px;
     text-align: center;
     text-align: center;
@@ -203,7 +205,7 @@ footer {
   }
   
 .staff-member img {
-    width: 80%; /* Keeps images in proportion */
+    width: 80%;
     height: auto;
 
 }
@@ -219,16 +221,16 @@ footer {
     color: #555;
 }
 
-/* Media Query for responsiveness */
+/* Resizing on smaller screens */
 @media (max-width: 768px) {
     .staff-member {
-        width: 45%; /* Stacks the staff members in two columns for smaller screens */
+        width: 45%; 
     }
 }
-
+/* Resizing on even smaller screens */
 @media (max-width: 480px) {
     .staff-member {
-        width: 90%; /* Stacks the staff members in one column for very small screens */
+        width: 90%; 
     }
 }
 

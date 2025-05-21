@@ -1,3 +1,4 @@
+/*Top of page title and logo*/
 .flex-container {
   display: flex;
   justify-content: center; 
@@ -6,13 +7,13 @@
   padding: 20px 0; 
 }
 
-
+/*logo*/
 .logo {
   max-width: 100px;
   width: 10vw;
   height: auto;
 }
-
+/*Title text*/
 .flex-container h2, .flex-container h3 {
   margin: 0;
   padding: 0;
@@ -30,6 +31,7 @@
   font-size: 24px;
   margin-left: 10px;
 }
+/*Navbar*/
 .navbar {
   background-color: rgb(0, 84, 162);
   text-align: center;
@@ -37,7 +39,7 @@
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap; /* allows wrapping on small screens */
+  flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
   margin: 0;
@@ -64,22 +66,23 @@
   background-color: red;
 }
 
-/* Optional: Smaller padding on mobile */
+/* Responsiveness on Mobile phones */
 @media (max-width: 600px) {
   .nav-links li a {
     padding: 10px 12px;
   }
 }
+/*Body font*/
 body {
     font-size: 25px;
     font-family: "Segoe UI", Arial, sans-serif; 
   }
-
+/*Photo sizes*/
 img {
   width: 7%;
   height: auto;
 }
-
+/*footer*/
 footer {
   display: flex;
   align-items: center;
@@ -105,25 +108,23 @@ footer {
   li {
     float: left;
   }
-  
   li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
   }
   
+  /* Hovering and active */
   li a:hover {
     background-color: #111;
   }
-  
+
   .active {
     background-color: red;
   }
-
-/* Styling for Sport Title */
+/* Sport title */
 .titlesport {
   text-align: center;
   margin: 30px 0;
@@ -132,14 +133,14 @@ footer {
 
 .titlesport h2 {
   font-size: 36px;
-  color: rgb(0, 84, 162); /* A deep blue for consistency with the theme */
+  color: rgb(0, 84, 162); 
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 2px solid rgb(0, 84, 162); /* Underline the title for emphasis */
+  border-bottom: 2px solid rgb(0, 84, 162); 
   padding-bottom: 10px;
 }
 
-
+/* more footer */
 .footertextinfo {
       text-align: left;
       font-size: 12pt;
@@ -165,45 +166,47 @@ footer {
     justify-content: center;
     color: red;
   }
+
+/* Text overall in pages */
   .text-container {
     display: flex;
-    justify-content: space-between; /* Space out the items */
-    gap: 20px; /* Adds space between text and grid */
-    width: 98%; /* Full width */
+    justify-content: space-between; 
+    gap: 20px;
+    width: 98%; 
     padding: 20px;
-    align-items: stretch; /* Ensure both text boxes are the same height */
+    align-items: stretch; 
   }
-  
+  /* Side text */
   .text-left, .text-right {
     flex: 1; 
     text-align: left;
     padding: 10px;
     font-size: 18px;
     color: #333;
-    line-height: 1.6; /* Proper line spacing */
+    line-height: 1.6;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
   }
   
   .text-left {
-    margin-right: 10px; /* Add a little space between the two text boxes */
+    margin-right: 10px; 
   }
   
   .text-right {
-    margin-left: 10px; /* Add a little space between the two text boxes */
+    margin-left: 10px; 
   }
-  
+  /* 3x3 sport image grid */
   .image-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns for the images */
-    grid-template-rows: repeat(3, 1fr); /* 3 rows for the images */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px;
-    width: 50%; /* Adjust the width of the image grid */
+    width: 50%; 
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  
+  /* Text boxes design and hovering */
   .image-item {
     text-align: center;
     background-color: #fff;
@@ -234,7 +237,7 @@ footer {
     color: #333;
   }
 
-
+/* Side text design and responsiveness */
 .text-item {
   text-align: center;
   background-color: #fff;
@@ -256,7 +259,7 @@ footer {
   color: #333;
 }
 
-
+/* Page responsiveness on smaller devices */
 @media (max-width: 1024px) {
   .flex-container {
     flex-direction: column;
@@ -286,7 +289,7 @@ footer {
     padding: 15px;
   }
 }
-
+/* Page responsiveness on even smaller devices */
 @media (max-width: 600px) {
   /* Mobile devices */
   .flex-container {
