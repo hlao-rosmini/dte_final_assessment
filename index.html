@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rosmini College Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
+<!-- Title and Logo -->
   <div class="flex-container">
     <div><h2>Rosmini College</h2></div>
-    <img src="logo.png" class="logo" alt="Rosmini College Logo" />
+    <img src="assets/logo.png" class="logo" alt="Rosmini College Logo">
     <div><h3>Charity Fulfils the Law</h3></div>
   </div>
-
+<!-- Navbar -->
   <nav class="navbar">
     <ul class="nav-links">
       <li><a class="active" href="#home">Home</a></li>
-      <li><a href="sport.html">Sport</a></li>
-      <li><a href="staff.html">Staff</a></li>
+      <li><a href="html/sport.html">Sport</a></li>
+      <li><a href="html/staff.html">Staff</a></li>
       <li><a href="#learningareas">Learning Areas</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#contactus">Contact Us</a></li>
     </ul>
   </nav>
+	<!-- Carousel -->
     <div class="slideshow-container">
-
       <div class="mySlides fade">
         <div class="numbertext">1 / 4</div>
-        <img src="orchestra.jpg" style="width:100%">
+        <img src="assets/orchestra.jpg" style="width:100%" alt="Rosmini students playing Orchestra">
       </div>
       
       <div class="mySlides fade">
         <div class="numbertext">2 / 4</div>
-        <img src="science.jpg" style="width:100%">
+        <img src="assets/science.jpg" style="width:100%" alt="Rosmini students attempting a Science Experiment">
       </div>
       
       <div class="mySlides fade">
         <div class="numbertext">3 / 4</div>
-        <img src="students.jpg" style="width:100%">
+        <img src="assets/students.jpg" style="width:100%" alt="Rosmini students together">
       </div>
       <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
-        <img src="cricket.jpg" style="width:100%">
+        <img src="assets/cricket.jpg" style="width:100%" alt="Rosmini students playing cricket">
       </div>
       <a class="prev" onclick="plusSlides(-1)">❮</a>
       <a class="next" onclick="plusSlides(1)">❯</a>
     </div>
-    </div>
 
+	<!-- About rosmini and values -->
     <div class="titleAbout"><strong>About Rosmini College</strong></div>
     <div class="intro-text">
       Rosmini College is a Catholic Boys’ School founded by the Rosminian order to provide a Catholic education to young men on Auckland’s North Shore. We aim to shape them into well-rounded young men ready to leave school who are able to make a positive contribution to society and are empowered to serve others by living out the founder’s maxims.
@@ -85,6 +86,7 @@
         <em>“Love the Lord your God with your whole heart and your neighbour as yourself.”</em>
       </div>
     </div>
+	<!-- Carousel code -->
     <script>
       let slideIndex = 1;
       showSlides(slideIndex);
@@ -114,7 +116,7 @@
       }
       </script>
 
-
+<!-- footer -->
 <footer class="footer">
   <div class="column">
     <p class="footertextinfo">Contact Us<br></p>
@@ -126,8 +128,8 @@
   </div>
   <div class="column">
     <a class="footertext" href="index.html">Home<br></a>
-    <a class="footertext" href="sport.html">Sport<br></a>
-    <a class="footertext" href="staff.html">Staff<br></a>
+    <a class="footertext" href="html/sport.html">Sport<br></a>
+    <a class="footertext" href="html/staff.html">Staff<br></a>
     <a class="footertext">News<br></a>
   </div>
   <div class="column">
